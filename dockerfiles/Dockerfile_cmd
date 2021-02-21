@@ -1,0 +1,5 @@
+FROM centos
+RUN yum install telnet nginx -y
+ENV myenv=100
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
